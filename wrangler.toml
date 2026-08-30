@@ -1,0 +1,8 @@
+name = "eisenlog"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "eisenlog-db"
+database_id = "807fd4cd-0574-4c7f-9130-a929a043e55e"

@@ -1,0 +1,18 @@
+{
+  "name": "eisenlog-cloudflare",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev . --d1=DB=eisenlog-db",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute eisenlog-db --file=schema.sql"
+  },
+  "version": "1.0.0",
+  "description": "Diese App ist ein statischer Lift-Tracker basierend auf dem HTML-Tracker aus deinem Upload. Die Daten werden standardmäßig lokal im Browser gespeichert. Wenn du in `firebase-config.js` deine Firebase-Projectdaten einträgst, wird automatisch Firestore als Datenbank verwendet.",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.127.1"
+  }
+}
